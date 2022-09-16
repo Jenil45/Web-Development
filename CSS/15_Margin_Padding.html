@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel</title>
+    <style>
+        *{
+            box-sizing: border-box;         /* Adjust inside content on increasing padding and margin*/
+        }
+        body
+        {
+            background-color: rgb(235, 203, 220);
+        }
+        .container
+        {
+            background-color: rgb(135, 220, 222);
+            border: 3px solid brown;
+
+            /* We can give padding and margin for left , right , top ,bottom like this */
+            /* padding-top: 59px;       
+            padding-bottom: 59px;       
+            padding-left: 29px;       
+           */
+
+            /* padding: 29px 11px 29px 24px;   padding/margin: top , right , bottom , left 
+            margin: 34px;  */
+
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 29px 24px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Boxmodel</h3>
+        <p id="first"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius, dolore ea non distinctio quibusdam, nam sit accusantium voluptas, qui debitis quos repudiandae?</p>
+    </div>
+
+    <div class="container">
+        <h3>Boxmodel</h3>
+        <p id="second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius, dolore ea non distinctio quibusdam, nam sit accusantium voluptas, qui debitis quos repudiandae?</p>
+    </div>
+    
+    <div class="container">
+        <h3>Boxmodel</h3>
+        <p id="third"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eius, dolore ea non distinctio quibusdam, nam sit accusantium voluptas, qui debitis quos repudiandae?</p>
+    </div>
+
+</body>
+</html>
