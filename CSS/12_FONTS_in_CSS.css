@@ -1,0 +1,8 @@
+        p
+        {
+            font-style: oblique;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            font-size: xx-large;
+            line-height: 2.3em;                /* Distance between two upper llwer font */
+        }
