@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container
+        {
+            width: 900px;
+            border: 2px solid brown;
+            margin: 33px auto;
+            background-color: rgb(255, 228, 218);
+        }
+
+        .item
+        {
+            border: 2px solid grey;
+            padding: 6px 3px;
+            margin: 12px 3px;
+            background: rgb(223, 223, 223);
+        }
+
+        #fruits
+        {
+            float: left;
+            width: 48%;
+        }
+
+        #vegetables
+        {
+           float: right;
+           width: 48%;
+        }
+
+        #stationaries
+        {
+            width: 100%;
+            clear: both;
+        }
+
+        p , h3
+        {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome...!!!</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maxime impedit vero ullam itaque
+                beatae distinctio odit! Obcaecati est quod illo rem modi, tenetur nisi tempore minus nihil fuga libero.
+            </p>
+        </div>
+
+        <div id="vegetables" class="item">
+            <h3>Vegetables</h3>
+            <p id="vegetablesPara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maxime impedit vero ullam itaque
+                beatae distinctio odit! Obcaecati est quod illo rem modi, tenetur nisi tempore minus nihil fuga libero.
+            </p>
+        </div>
+
+        <div id="stationaries" class="item">
+            <h3>Stationaries</h3>
+            <p id="stationaryPara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maxime impedit vero ullam itaque
+                beatae distinctio odit! Obcaecati est quod illo rem modi, tenetur nisi tempore minus nihil fuga libero.
+            </p>
+        </div>
+
+        <div id="stationaries" class="item">
+            <h3>Stationaries</h3>
+            <p id="stationaryPara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maxime impedit vero ullam itaque
+                beatae distinctio odit! Obcaecati est quod illo rem modi, tenetur nisi tempore minus nihil fuga libero.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
