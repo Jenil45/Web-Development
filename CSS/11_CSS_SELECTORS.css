@@ -1,0 +1,33 @@
+       /*  Here we use #secondpara which is #id of paragraph  [if we want to use id then use '#' and we want to use class then use '.' */
+
+        /* (1) CSS ELEMENT SELECTOR */
+        p{
+            color: red;
+            background-color: chartreuse;
+        }
+
+        /* (2) CSS ID SELECTOR    [here id is #secondPara]*/
+        #secondPara                     
+        {
+            color: blue;
+            background-color: cyan;
+        }
+
+        /* (3) CSS CLASS SELECTOR    [here class is .lightblueBg]*/
+        .lightblueBg
+        {
+            color: black;
+            background-color: lightblue;
+        }
+
+        /* (4) CSS GROUPING SELECTOR */
+        footer,span
+        {
+            background-color: lightpink;
+        }
+
+        /* Grouping + border effect */
+        p , #secondPara , .lightblueBg , footer , span
+        {
+            border: 2px solid purple;
+        }
