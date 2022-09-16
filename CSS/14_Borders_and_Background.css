@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #firstPara
+        {
+            background-color: lightgreen;           /*background color*/
+            height: 50px;                             /* Text has bg of this height */  
+            width: 400px;                             /* Text has bg of this width */  
+            border-color: green;                    /* specifies border color */
+            border-style: solid;                      /* style of border if it is not given then no border */ 
+            border-width: 4px;                        /* border width */
+            border-radius: 15px;                      /* border curvness at edge */
+        }
+
+        #secondPara
+        {
+            background-color: lightsalmon;
+            height: 50px;
+            width: 400px;
+            border-top: 2px solid red;
+            border-bottom: 4px solid green;
+            border-left: 7px solid hotpink;
+            border-right: 3px solid blue;
+            border-top-left-radius: 11px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 14px;
+            border-bottom-left-radius: 6px;
+        }
+
+        #thirdPara
+        {
+            height: 400px;
+            width: 650px;
+            background-image: url(rohit\ sharma.jpg) ;
+            background-repeat: no-repeat;                   /*No repeat on height and width increase*/
+            border: 4px solid brown;
+            border-radius: 14px;
+            /* background position: 192px 34px */
+            /* background position: centre 34px */
+            /* background position: 192px top */
+        }
+    </style>
+</head>
+<body>
+    <h3>Borders and Background</h3>
+    <p id="firstPara">This is Borders and Background.  </p>
+    <p id="secondPara">This is second Borders and Background.  </p>
+    <p id="thirdPara">This is third Borders and Background images.  </p>
+</body>
+</html>
