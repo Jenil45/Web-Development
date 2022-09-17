@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and Z-index</title>
+
+    <style>
+        .box
+        {
+            height: 170px;
+            width: 170px;
+            border: 2px solid black;
+        }
+
+        /* Z-index concept */
+        /* Z-index means if two boxes are overlaped then which will shown upper side */
+        /* Z-index works only on  positioned element (means position = relative , absolute , sticky , fixed ) not on position = static */
+
+        #box1
+        {
+            position: relative;
+            top: 49px;
+            z-index: 14px;        
+            /*Here first box1 has top = 49 and box 2 has top = 4 px so 2 is overlaped on 1 now if we want to see red onuper then we have to increase z-index more than 2 top */
+            background-color: red;
+        }
+        #box2
+        {
+            position: relative;
+            top: 44px;
+            z-index: 100px;
+            background-color: blue;
+
+            /* Visibilty Concept */
+            /* visibility: hidden;             will hide the element but it will show empty space  */
+            /* display: none;                  wil hide the element and the space too  */
+        }
+        #box3
+        {
+            background-color: green;
+        }
+        #box4
+        {
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
