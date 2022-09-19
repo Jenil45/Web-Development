@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design and Font Unit</title>
+    <style>
+
+        html
+        {
+            font-size: 20px;
+        }
+        .container {
+            /* width: 400px; */
+            width: 100vw;                  
+            /*  Show percentage of vw(sjhowing display width)   */
+
+            /* height: 1300px; */
+            height: 100vh;
+            /*  Show percentage of vh(showing display height)   */
+            
+            border: 2px solid red;
+            font-size: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        #first
+        {
+            font-size: 10em;
+            /* 'em' means it takes 10 times size of its parent (here it is container) */            
+
+            padding: 3em;
+            /* Now here it's never done 3*(10px of container) now its been 3*(100px = 10em of font-size) = 300px */
+            /* Because when we set font-size then it take parent as that */
+        }
+
+        #second
+        {
+            font-size: 4rem;
+            /* 'rem' means it takes 10 time size of its html font-size */
+        }
+
+
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+
+</html>
